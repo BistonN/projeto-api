@@ -33,7 +33,7 @@ Após isso foi realizado um teste criando uma rota de 'produtos' com um end-poin
 ![](./imagens/postman.png)
 
 #### Atualizações 27/10:
-Foi adicionado ao projeto:
+Foi adicionado ao projeto [commit 03/nov](https://github.com/BistonN/projeto-api/commit/aef8bbf36f65080af29869ed17ea1d2f0ca15d0c):
   - Controller de usuarios;
   - Rotas de usuarios com uma rota POST para o cadastro do usuario;
   - middleware de login, para futuramente ser usado para validar a autenticação do usuario;
