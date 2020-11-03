@@ -32,4 +32,10 @@ Após isso foi realizado um teste criando uma rota de 'produtos' com um end-poin
 
 ![](./imagens/postman.png)
 
+#### Atualizações 27/10:
+Foi adicionado ao projeto:
+  - Controller de usuarios;
+  - Rotas de usuarios com uma rota POST para o cadastro do usuario;
+  - middleware de login, para futuramente ser usado para validar a autenticação do usuario;
+  - controller utils com metodo de getErro para facilitar a debugação após o deploy na nuvem;
 

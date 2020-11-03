@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const helmet = require('helmet');
 
 const produtoRoute = require('./routes/produto-route');
+const usuarioRoute = require('./routes/usuario-route');
 
 app.use(morgan('dev'));
 
@@ -27,6 +28,7 @@ app.use((req, res, next) => {
 });
 
 app.use('/produtos', produtoRoute);
+app.use('/usuarios', usuarioRoute);
 
 app.use((req, res, next) => {
     const error = new Error('Not found...');
