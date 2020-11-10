@@ -5,7 +5,7 @@ exports.getApiConfig = () => {
 const envNodemon = require('./nodemon.json');
 
     return {
-        jwt_key: process.env.JWT_KEY,
+        jwt_key: 'essetrabalhoeparafinsdidaticos',
         url_dominio: 'http://localhost:3000',
         web_dominio: 'http://localhost:4200/#',
         port: 3000,
