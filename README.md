@@ -32,10 +32,18 @@ Após isso foi realizado um teste criando uma rota de 'produtos' com um end-poin
 
 ![](./imagens/postman.png)
 
-#### Atualizações 27/10:
+#### Atualizações 03/11:
 Foi adicionado ao projeto [commit 03/nov](https://github.com/BistonN/projeto-api/commit/aef8bbf36f65080af29869ed17ea1d2f0ca15d0c):
   - Controller de usuarios;
   - Rotas de usuarios com uma rota POST para o cadastro do usuario;
   - middleware de login, para futuramente ser usado para validar a autenticação do usuario;
   - controller utils com metodo de getErro para facilitar a debugação após o deploy na nuvem;
+
+#### Atualizações 10/11:
+Foi adicionado ao projeto [commit 10/nov](https://github.com/BistonN/projeto-api/commit/641b97a7a7c50b5ce5abc4b5d957db55c4f8539f):
+  - Finalizando todos os metodos do controller de usuario: login, cadastro e outros middleware para auxilio dos metodos;
+  - Adicionado biblioteca para criptografia no login;
+  - Teste do login.require ultilziando a authenticação por token, conforme a figura a seguir
+
+  ![](./imagens/rota_com_login_required.png)
 
