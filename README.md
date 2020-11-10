@@ -45,5 +45,6 @@ Foi adicionado ao projeto [commit 10/nov](https://github.com/BistonN/projeto-api
   - Adicionado biblioteca para criptografia no login;
   - Teste do login.require ultilziando a authenticação por token, conforme a figura a seguir
 
-  ![](./imagens/rota_com_login_required.png)
+![](./imagens/rota_produtos_teste.png)
+![](./imagens/rota_com_login_required.png)
 
