@@ -1,0 +1,15 @@
+<div class="toolbar" role="banner">
+  <span>Welcome</span>
+  <div class="spacer"></div>
+  <div>
+    <input type="color" id="head" name="head" value="#000000">
+    <span for="head">hex color</span>
+  </div>
+</div>
+
+<div class="content" role="main">
+  <div *ngFor="let produto of produtos; let i = index">
+    {{produto.codigo}}
+    <div background="javascript:alert('XSS')"  innerHTML="{{produto.codigo}}"></div>
+  </div>
+</div>
