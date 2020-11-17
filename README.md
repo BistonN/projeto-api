@@ -49,7 +49,7 @@ Foi adicionado ao projeto o [commit 10/nov](https://github.com/BistonN/projeto-a
 ![](./imagens/rota_com_login_required.png)
 
 #### Atualizações 17/11:
-Foi adicionado ao projeto o [commit 17/nov](https://github.com/BistonN/projeto-api/commit/a470c9c2039c65243fc472141cab7f744b4369dc)
+Foi adicionado ao projeto o [commit 17/nov](https://github.com/BistonN/projeto-api/commit/a470c9c2039c65243fc472141cab7f744b4369dc):
   -Criado as rotas de produtos;
   -Crido aplicativo para interação com a API;
   -Realização da comunicação da api com o APP;
