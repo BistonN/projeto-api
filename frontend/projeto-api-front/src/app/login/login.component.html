@@ -1,1 +1,15 @@
-<p>login works!</p>
+<div class="login">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email" placeholder="Entre com seu email">
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" class="form-control" formControlName="senha" id="senha" placeholder="Senha">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Login</button>
+        <button (click)="goCadastro()" class="btn btn-secondary float-right">Cadastre-se</button>
+    </form>
+</div>

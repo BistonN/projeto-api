@@ -1,15 +1,35 @@
 <div class="toolbar" role="banner">
   <span>Welcome</span>
   <div class="spacer"></div>
-  <div>
-    <input type="color" id="head" name="head" value="#000000">
-    <span for="head">hex color</span>
+  <form [formGroup]="colorForm">
+    <div>
+      <input type="color" id="head color" name="head" formControlName="color">
+      <span class="color" for="head">color</span>
+    </div>
+  </form>
+</div>
+
+<div class="row content">
+  <div class="col-4" *ngFor="let produto of produtos; let i = index">
+    <div class="produtos" (click)="open(mymodal, produto.nome, produto.codigo)">
+      <div class="svg" [innerHTML]="renderSVG(produto.codigo)"></div>
+      <div class="nomeSvg aling-center">code: {{produto.nome}}</div>
+    </div>
   </div>
 </div>
 
-<div class="content" role="main">
-  <div *ngFor="let produto of produtos; let i = index">
-    {{produto.codigo}}
-    <div background="javascript:alert('XSS')"  innerHTML="{{produto.codigo}}"></div>
+
+<ng-template #mymodal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">{{code}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">×</span>
+    </button>
   </div>
-</div>
+  <div class="modal-body">
+    <button class="btn btn-primary" (click)="copyCode(svgContent)">click to copy svg code</button> 
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+  </div>
+</ng-template>

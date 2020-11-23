@@ -32,4 +32,8 @@ export class ApiService {
     login(form: any) {
         return this.http.post(`${this.API_URL}/usuarios/login`, form);
     }
+
+    cadastro(form: any) {
+        return this.http.post(`${this.API_URL}/usuarios/cadastro`, form);
+    }
 }

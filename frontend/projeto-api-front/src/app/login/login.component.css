@@ -1,0 +1,8 @@
+.login {
+    padding: 30px;
+    position: absolute;
+    background-color: #2e2e2e;
+    width: 500px;
+    bottom: calc(50% - 105px);
+    left: calc(50% - 225px);
+}
